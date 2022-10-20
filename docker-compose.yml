@@ -1,0 +1,14 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - vol1:/var/vol1
+    depends_on:
+      - redis
+    environment:
+      PORT: "8080"
+volumes:
+  vol1: {}
