@@ -10,5 +10,6 @@ services:
       - redis
     environment:
       PORT: "8080"
+      DB_PATH: "/var/vol1"
 volumes:
   vol1: {}
